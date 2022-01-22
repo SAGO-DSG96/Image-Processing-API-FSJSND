@@ -1,0 +1,44 @@
+{
+  "name": "image-processing-api",
+  "version": "1.0.0",
+  "description": "First project FullStackND ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "test": "npm run build && npm run jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAGO-DSG96/Image-Processing-API-FSJSND.git"
+  },
+  "author": "Daniel Salazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAGO-DSG96/Image-Processing-API-FSJSND/issues"
+  },
+  "homepage": "https://github.com/SAGO-DSG96/Image-Processing-API-FSJSND#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "express": "^4.17.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.29.3",
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.10.3",
+    "@types/sharp": "^0.29.5",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "jasmine": "^4.0.2",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  }
+}
