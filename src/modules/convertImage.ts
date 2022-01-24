@@ -45,7 +45,7 @@ const resizeImage = async (
             .resize({ width: width, height: height })
             .toFile(path.resolve(`${destination}${file}-${width}-${height}.${toFormat}`));
     } catch (error) {
-        console.log(error);
+        throw Error;
     }
     return path.resolve(`${destination}${file}-${width}-${height}.${toFormat}`);
 };
